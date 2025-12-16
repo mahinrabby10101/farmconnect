@@ -15,7 +15,7 @@ export default function ServiceCard({ service, colorIndex = 0 }) {
       <p>Rating: {service.rating}</p>
       <Link
         to={`/service/${service.serviceId}`}
-        className="btn btn-primary mt-2 w-full text-center block"
+        className="btn btn-primary bg-green-600 mt-2 w-full text-center block"
       >
         View Details
       </Link>

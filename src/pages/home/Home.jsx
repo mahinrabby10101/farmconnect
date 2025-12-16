@@ -1,5 +1,5 @@
 import Hero from "./Hero";
-import ServicesSection from "./ServicesSection";
+import ServicesSection from "./Crops";
 import ExpertVets from "./ExpertVets";
 import ExtraSection from "./ExtraSection";
 import WinterTips from "./WinterTips";

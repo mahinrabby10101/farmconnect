@@ -29,6 +29,14 @@ export default function Navbar() {
 >
   Services
 </NavLink>
+<NavLink
+  to="/AddCrops"
+  className={({ isActive }) =>
+    isActive ? " font-semibold" : "text-gray-700"
+  }
+>
+  AddCrops
+</NavLink>
 
         <NavLink to="/profile" className={({ isActive }) => isActive ? " font-semibold" : "text-gray-700"}>
           My Profile

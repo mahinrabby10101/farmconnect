@@ -13,12 +13,14 @@ import NotFound from "./pages/NotFound/NotFound";
 import PrivateRoute from "./routes/PrivateRoute";
 import "./index.css";
 import { Toaster } from "react-hot-toast";
-import Services from "./components/Services";
+import Services from "./components/AllCrops";
 
 
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import AddCrops from "./pages/home/AddCrops";
+import AllCrops from "./components/AllCrops";
 AOS.init({
   duration: 1000,
   once: true,
@@ -43,7 +45,16 @@ const router = createBrowserRouter([
       {
         path: "/services",
         element: <Services />,
-      }
+      },
+      {
+        path: "/AddCrops",
+        element: <AddCrops />,
+      },
+      {
+        path: "/all-crops",
+        element: <AllCrops />,
+      },
+
       
     ],
   },
