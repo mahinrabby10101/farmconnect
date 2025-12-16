@@ -1,0 +1,58 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules"; 
+import "swiper/css";
+
+export default function Hero() {
+  const slides = [
+    {
+      img: "https://images.unsplash.com/photo-1744230673231-865d54a0aba4?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "Smart Farming Solutions",
+      subtitle: "Use modern technology to monitor crops, soil, and weather for better harvests",
+    },
+    {
+      img: "https://images.unsplash.com/photo-1505764706515-aa95265c5abc?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "Helping Farmers Grow",
+      subtitle: "Practical farming information tailored for local agricultural needs",
+    },
+    {
+      img: "https://images.unsplash.com/photo-1677128354531-763e55bf06cc?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "Sustainable Crop Growth",
+      subtitle: "Grow healthy crops using eco-friendly and data-driven farming practices",
+    },
+  ];
+
+  return (
+    <div className="w-full rounded-lg mb-10">
+      <Swiper
+        modules={[Autoplay]}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        loop={true}
+        className="relative"
+      >
+        {slides.map((slide, i) => (
+          <SwiperSlide key={i} className="relative">
+           
+            <img
+              src={slide.img}
+              alt={`Slide ${i}`}
+              className="w-full h-[300px] md:h-[400px] lg:h-[500px] object-cover rounded-lg"
+            />
+
+           
+            <div className="absolute inset-0 bg-black/30 z-10 rounded-lg"></div>
+
+           
+            <div className="absolute inset-0 flex flex-col items-center justify-center z-20 px-4 text-center">
+              <h2 className="text-white text-2xl md:text-5xl font-bold drop-shadow-lg">
+                {slide.title}
+              </h2>
+              <p className="text-white text-sm md:text-lg drop-shadow-md mt-2">
+                {slide.subtitle}
+              </p>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  );
+}
