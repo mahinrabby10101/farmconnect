@@ -1,4 +1,3 @@
-// src/components/CropProtection.jsx
 import React from "react";
 
 export default function CropProtection() {
