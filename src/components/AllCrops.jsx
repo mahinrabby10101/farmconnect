@@ -50,7 +50,7 @@ export default function AllCrops() {
 </p> {typeFilter ? `- ${typeFilter}` : ""}
       </h2>
 
-      {/* Search bar */}
+      {/* search bar  */}
       <div className="mb-9 w[300] flex">
         <input
           type="text"

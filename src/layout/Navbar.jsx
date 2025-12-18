@@ -6,7 +6,6 @@ import { FaLeaf } from "react-icons/fa";
 export default function Navbar() {
   const { user, logOut } = useContext(AuthContext);
 
-  // Helper function to handle dynamic text colors against the blue background
   const navLinkStyles = ({ isActive }) => 
     isActive ? "text-white font-bold border-b-2 border-yellow-300 pb-1" : "text-blue-100 hover:text-white transition-colors";
 
@@ -50,7 +49,7 @@ export default function Navbar() {
     to="/my-interests"
     className={({ isActive }) =>
       isActive
-        ? `${navLinkStyles} font-bold`  // optional: add active styling
+        ? `${navLinkStyles} font-bold` 
         : ` hover:text-customBlue`
     }
   >

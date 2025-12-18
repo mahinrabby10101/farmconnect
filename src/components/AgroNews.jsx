@@ -1,4 +1,3 @@
-// src/components/AgroNewsLeftImage.jsx
 import React from "react";
 
 export default function AgroNewsLeftImage() {
@@ -39,7 +38,7 @@ export default function AgroNewsLeftImage() {
               key={idx}
               className="flex flex-col md:flex-row items-center bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
             >
-              {/* Image Left */}
+            {/* // img left  */}
               <div className="md:w-1/3 w-full h-48 md:h-auto flex-shrink-0">
                 <img
                   src={item.image}
