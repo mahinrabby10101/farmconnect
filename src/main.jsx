@@ -25,6 +25,8 @@ import AddCrops from "./pages/home/AddCrops";
 import AllCrops from "./components/AllCrops";
 import MyPosts from "./pages/home/MyPosts";
 import MyInterests from "./pages/home/MyInterests";
+import SeedsAndFertilizers from "./components/SeedsAndFertilizers";
+
 AOS.init({
   duration: 1000,
   once: true,
@@ -69,6 +71,10 @@ const router = createBrowserRouter([
       {
         path: "/allcrops",
         element: <AllCrops />,
+      },
+      {
+        path: "/seeds-fertilizers",
+        element: <SeedsAndFertilizers />,
       },
 
       
