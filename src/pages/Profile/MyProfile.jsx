@@ -34,7 +34,7 @@ export default function MyProfile() {
 
   return (
     <div className="p-8 max-w-md mx-auto text-center bg-white rounded-lg shadow-md mt-10">
-      <h1 className="text-3xl font-bold mb-6 text-blue-600">My Profile</h1>
+      <h1 className="text-3xl font-bold mb-6 customBlue">My Profile</h1>
 
       <div className="flex justify-center mb-4">
         <img
@@ -56,7 +56,7 @@ export default function MyProfile() {
 
           <button
             onClick={() => setIsEditing(true)}
-            className="btn btn-primary mt-6 w-full"
+            style={{ backgroundColor: "#116EB0" }} className="btn btn-primary mt-6 w-full"
           >
             Update Profile
           </button>

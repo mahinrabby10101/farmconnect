@@ -44,8 +44,10 @@ export default function AllCrops() {
 
   return (
     <div className="container mx-auto p-4">
-      <h2 style={{ fontFamily: "'Pacifico', cursive" }} className="text-2xl customBlue font-semibold mb-6 ">
-        All Crops {typeFilter ? `- ${typeFilter}` : ""}
+      <h2 style={{ fontFamily: "'Pacifico', cursive" }} className="text-2xl flex customBlue font-semibold mb-6 ">
+        All Crops <p className="text-sm text-gray-600">
+  {filteredCrops.length} crops found
+</p> {typeFilter ? `- ${typeFilter}` : ""}
       </h2>
 
       {/* Search bar */}
