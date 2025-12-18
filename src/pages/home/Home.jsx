@@ -1,5 +1,4 @@
 import Hero from "./Hero";
-import ExtraSection from "./ExtraSection";
 import WinterTips from "./WinterTips";
 import Crops from "./Crops"
 import HomeCrops from "../../components/HomeCrops";
@@ -21,7 +20,6 @@ export default function Home() {
       <WinterTips />
       <TeamSection />
 
-      <ExtraSection />
     </div>
   );
 }
