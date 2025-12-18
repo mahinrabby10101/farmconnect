@@ -4,7 +4,6 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import AuthProvider from "./context/AuthContext";
 import MainLayout from "./layout/MainLayout";
 import Home from "./pages/Home/Home";
-import ServiceDetails from "./pages/ServiceDetails/ServiceDetails";
 import MyProfile from "./pages/Profile/MyProfile";
 import Login from "./pages/Auth/Login";
 import Register from "./pages/Auth/Register";
@@ -40,7 +39,6 @@ const router = createBrowserRouter([
     element: <MainLayout />,
     children: [
       { index: true, element: <Home /> }, 
-      { path: "service/:id", element: <PrivateRoute><ServiceDetails /></PrivateRoute> },
       { path: "profile", element: <PrivateRoute><MyProfile /></PrivateRoute> },
       { path: "crop/:id", element: <PrivateRoute> <CropDetails /></PrivateRoute> },
       { path: "add-crop", element: <PrivateRoute><AddCrop /></PrivateRoute> },
