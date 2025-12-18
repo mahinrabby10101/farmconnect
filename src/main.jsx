@@ -14,6 +14,8 @@ import PrivateRoute from "./routes/PrivateRoute";
 import "./index.css";
 import { Toaster } from "react-hot-toast";
 import Services from "./components/AllCrops";
+import CropDetails from "./components/CropDetails"
+import AddCrop from "./pages/home/AddCrops";
 
 
 
@@ -36,6 +38,10 @@ const router = createBrowserRouter([
       { index: true, element: <Home /> }, 
       { path: "service/:id", element: <PrivateRoute><ServiceDetails /></PrivateRoute> },
       { path: "profile", element: <PrivateRoute><MyProfile /></PrivateRoute> },
+      { path: "crop/:id", element: <PrivateRoute> <CropDetails /></PrivateRoute> },
+      { path: "add-crop", element: <PrivateRoute><AddCrop /></PrivateRoute> },
+
+      
       { path: "login", element: <Login /> },
       { path: "register", element: <Register /> },
       { path: "forget-password", element: <ForgetPassword /> },
@@ -43,15 +49,12 @@ const router = createBrowserRouter([
 
       { path: "*", element: <NotFound /> }, 
       {
-        path: "/services",
-        element: <Services />,
+        path: "/allcrops",
+        element: <AllCrops />,
       },
+   
       {
-        path: "/AddCrops",
-        element: <AddCrops />,
-      },
-      {
-        path: "/all-crops",
+        path: "/allcrops",
         element: <AllCrops />,
       },
 

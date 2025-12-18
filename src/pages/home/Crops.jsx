@@ -12,7 +12,7 @@ export default function ResourceCards() {
 
   return (
     <div className="container mx-auto p-4">
-      <h2 style={{ fontFamily: "'Pacifico', cursive" }} className="text-2xl font-semibold mb-6 text-center">
+      <h2 style={{ fontFamily: "'Pacifico', cursive" }} className="text-2xl font-semibold mb-6 customBlue">
         From Farm to Table
       </h2>
 
@@ -20,7 +20,7 @@ export default function ResourceCards() {
         {resources.map((res, idx) => (
           <div
             key={idx}
-            onClick={() => navigate(`/all-crops?type=${res.title}`)}
+            onClick={() => navigate(`/allcrops?type=${res.title}`)}
             className="cursor-pointer relative border rounded overflow-hidden shadow hover:shadow-lg transform hover:scale-105 transition duration-300"
           >
             <img src={res.image} alt={res.title} className="w-full h-48 object-cover" />

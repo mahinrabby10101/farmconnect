@@ -8,6 +8,8 @@ import Register from "./pages/Auth/Register";
 import ForgetPassword from "./pages/Auth/ForgetPassword";
 import NotFound from "./pages/NotFound/NotFound";
 import PrivateRoute from "./routes/PrivateRoute";
+import CropDetails from "./components/CropDetails"
+
 
 
 export default function App() {
@@ -16,10 +18,10 @@ export default function App() {
       <Route path="/" element={<MainLayout />}>
         <Route index element={<Home />} />
         <Route
-          path="service/:id"
+          path="crop/:id"
           element={
             <PrivateRoute>
-              <ServiceDetails />
+              <CropDetails />
             </PrivateRoute>
           }
         />

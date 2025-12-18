@@ -7,7 +7,7 @@ import { FaLeaf } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-green-600 text-gray-300 py-10 mt-10">
+    <footer className="bg-[#116EB0] text-white py-10 mt-10">
       <div className="max-w-6xl mx-auto px-4">
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
@@ -19,7 +19,7 @@ export default function Footer() {
       <h2 className="text-2xl font-bold text-white" style={{ fontFamily: "'Pacifico', cursive" }}>FarmConnect</h2>
       </Link>
 
-            <p className="mt-2 text-sm text-gray-400">
+            <p className="mt-2 text-sm text-blue-200">
             Connecting farmers, traders, and consumers in one digital agro-network.
             </p>
           </div>
@@ -46,7 +46,7 @@ export default function Footer() {
 
         </div>
 
-        <div className="text-center text-gray-500 text-sm mt-10 border-t border-gray-700 pt-4">
+        <div className="text-center text-gray-500 text-sm mt-10 border-t border-white/20 pt-4">
           © 2025 FarmConnect. All rights reserved.
         </div>
 

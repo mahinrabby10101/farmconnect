@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 
 export default function AllCrops() {
   const [crops, setCrops] = useState([]);
   const [filteredCrops, setFilteredCrops] = useState([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
+  const navigate = useNavigate();
+
 
   const location = useLocation();
   const params = new URLSearchParams(location.search);
@@ -40,12 +44,12 @@ export default function AllCrops() {
 
   return (
     <div className="container mx-auto p-4">
-      <h2 className="text-2xl font-semibold mb-6 text-center">
+      <h2 style={{ fontFamily: "'Pacifico', cursive" }} className="text-2xl customBlue font-semibold mb-6 ">
         All Crops {typeFilter ? `- ${typeFilter}` : ""}
       </h2>
 
       {/* Search bar */}
-      <div className="mb-6 flex justify-center">
+      <div className="mb-9 w[300] flex">
         <input
           type="text"
           placeholder="Search crops..."
@@ -64,9 +68,12 @@ export default function AllCrops() {
               <div className="p-4">
                 <h3 className="text-lg font-bold mb-2">{crop.name}</h3>
                 <p className="text-sm mb-4">{crop.description}</p>
-                <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-                  View Details
-                </button>
+                <button
+                onClick={() => navigate(`/crop/${crop._id}`)}
+                style={{ backgroundColor: "#116EB0" }} className=" text-white px-4 py-2 rounded hover:bg-blue-700 mt-2 w-full"
+              >
+                View Details
+              </button>
               </div>
             </div>
           ))}
