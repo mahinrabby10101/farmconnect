@@ -141,7 +141,7 @@ export default function AddCrop() {
         <button
           type="submit"
           disabled={submitting}
-          className="bg-customBlue text-white px-4 py-2 rounded w-full hover:bg-blue-700"
+          style={{ backgroundColor: "#116EB0" }} className=" text-white px-4 py-2 rounded w-full hover:bg-blue-700"
         >
           {submitting ? "Submitting..." : "Add Crop"}
         </button>

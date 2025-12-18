@@ -23,6 +23,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import AddCrops from "./pages/home/AddCrops";
 import AllCrops from "./components/AllCrops";
+import MyPosts from "./pages/home/MyPosts";
+import MyInterests from "./pages/home/MyInterests";
 AOS.init({
   duration: 1000,
   once: true,
@@ -40,8 +42,19 @@ const router = createBrowserRouter([
       { path: "profile", element: <PrivateRoute><MyProfile /></PrivateRoute> },
       { path: "crop/:id", element: <PrivateRoute> <CropDetails /></PrivateRoute> },
       { path: "add-crop", element: <PrivateRoute><AddCrop /></PrivateRoute> },
+      { path: "my-posts", element: <PrivateRoute><MyPosts /></PrivateRoute> },
 
+      { path: "profile", element: <PrivateRoute><MyProfile /></PrivateRoute> },
+      {
+        path: "my-interests",
+        element: (
+          <PrivateRoute>
+            <MyInterests />
+          </PrivateRoute>
+        ),
+      },
       
+
       { path: "login", element: <Login /> },
       { path: "register", element: <Register /> },
       { path: "forget-password", element: <ForgetPassword /> },

@@ -17,7 +17,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={<MainLayout />}>
         <Route index element={<Home />} />
-        <Route
+        <Route  
           path="crop/:id"
           element={
             <PrivateRoute>

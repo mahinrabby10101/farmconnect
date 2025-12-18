@@ -32,6 +32,34 @@ export default function Navbar() {
         <NavLink to="/add-crop" className={navLinkStyles}>
           Add Crops
         </NavLink>
+        {user && (
+  <NavLink
+    to="/my-posts"
+    className={({  isActive }) =>
+      isActive 
+        ? `${navLinkStyles}font-bolt`
+        : "hover:text-customBlue"
+    }
+  >
+    My Posts
+  </NavLink>
+)}
+
+{user && (
+  <NavLink
+    to="/my-interests"
+    className={({ isActive }) =>
+      isActive
+        ? `${navLinkStyles} font-bold`  // optional: add active styling
+        : ` hover:text-customBlue`
+    }
+  >
+    My Interests
+  </NavLink>
+)}
+
+
+
 
         <NavLink to="/profile" className={navLinkStyles}>
           My Profile
