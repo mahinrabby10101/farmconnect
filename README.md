@@ -1,41 +1,25 @@
-# 🐾 WarmPaws – Winter Pet Care Web App
+# 🌾 KrishiLink – Farmer’s Growth & Connection Platform
 
-## 🌐 Live URL
-🔗 [https://extraordinary-sopapillas-e8d6b4.netlify.app/]
-
----
-
-## 🎯 Project Purpose
-WarmPaws is a **React + Firebase** web application that helps pet owners find and book **winter care services** for their pets — including grooming, nutrition, and cozy clothing.
-It includes **user authentication**, **protected routes**, and a **modern UI** built with Tailwind CSS.
+🔗 **Live Website:** https://your-live-site-url.com  
+💻 **Client Repository:** https://github.com/your-username/krishilink-client  
+🖥️ **Server Repository:** https://github.com/your-username/krishilink-server  
 
 ---
 
-## ✨ Key Features
-- 🧼 **Winter Pet Services** — List of grooming, nutrition, and walking services.
-- 🔒 **Protected Routes** — Only logged-in users can access profile & service details.
-- 👤 **Firebase Authentication** — Email/password + Google login.
-- 📱 **Responsive Design** — Works smoothly on all devices.
-- 🖼️ **Hero Image Slider** — Built using Swiper.js.
-- 🎉 **Toast Notifications** — For login/register actions.
-- 🧩 **Dynamic Data Fetching** — Services are loaded from `pets-data.json`.
+## 📌 Project Overview
+
+**KrishiLink** is a modern agro-social networking web application that connects **farmers, traders, and consumers** in one digital platform.  
+Instead of a traditional buyer-seller e-commerce model, KrishiLink focuses on **direct interaction, collaboration, and interest-based connections** among users in the agricultural sector.
+
+Users can post crops they are growing or selling, browse other users’ posts, and send interest requests to connect and collaborate.
 
 ---
 
-## 🧰 NPM Packages Used
+## 🚀 Key Features
 
-| Package | Purpose |
-|----------|----------|
-| **react-router-dom** | Routing and navigation |
-| **firebase** | Authentication & Firebase setup |
-| **react-hot-toast** | Notification system |
-| **swiper** | Image slider for hero section |
-| **aos** | Scroll animations |
-| **tailwindcss** | Styling framework |
-| **vite** | Development & build tool |
-
----
-
-## 👨‍💻 Developer
-**Mahin Alam Rabby**  
-📧 mahinalamrabby034@gmail.com
+- 🌱 Users can post crops they are growing or selling
+- 🔍 Browse and search all crop posts with live filtering
+- 🤝 Send interest requests and collaborate directly
+- 🔐 Secure authentication (Email/Password & Google Login)
+- 📊 Manage own posts and track sent interests
+- ⚡ Real-
