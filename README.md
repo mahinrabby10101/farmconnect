@@ -1,8 +1,7 @@
 # 🌾 KrishiLink – Farmer’s Growth & Connection Platform
 
-🔗 **Live Website:** https://your-live-site-url.com  
-💻 **Client Repository:** https://github.com/your-username/krishilink-client  
-🖥️ **Server Repository:** https://github.com/your-username/krishilink-server  
+🔗 **Live Website:** https://magenta-melba-f32b24.netlify.app/ 
+
 
 ---
 

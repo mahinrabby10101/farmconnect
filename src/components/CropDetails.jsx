@@ -15,7 +15,7 @@ export default function CropDetails() {
   useEffect(() => {
     const fetchCrop = async () => {
       try {
-        const res = await axios.get(`http://localhost:3000/api/crops/${id}`);
+        const res = await axios.get(`https://farmconnect-ten-green.vercel.app/api/crops/${id}`);
         setCrop(res.data);
       } catch (err) {
         console.error(err);
@@ -41,7 +41,7 @@ export default function CropDetails() {
 
     setSubmitting(true);
     try {
-      await axios.post(`http://localhost:3000/api/crops/${id}/interests`, {
+      await axios.post(`https://farmconnect-ten-green.vercel.app/api/crops/${id}/interests`, {
         userEmail: user.email,
         userName: user.displayName || user.name,
         quantity,
@@ -49,7 +49,7 @@ export default function CropDetails() {
       });
       alert("Interest submitted!");
       // Refresh crop data
-      const updated = await axios.get(`http://localhost:3000/api/crops/${id}`);
+      const updated = await axios.get(`https://farmconnect-ten-green.vercel.app/api/crops/${id}`);
       setCrop(updated.data);
       setMessage("");
       setQuantity(1);
@@ -121,14 +121,14 @@ export default function CropDetails() {
                       {i.status === "pending" && (
                         <>
                           <button onClick={async () => {
-                            await axios.patch(`http://localhost:3000/api/crops/${id}/interests/${i._id}`, { status: "accepted" });
-                            const updated = await axios.get(`http://localhost:3000/api/crops/${id}`);
+                            await axios.patch(`https://farmconnect-ten-green.vercel.app/api/crops/${id}/interests/${i._id}`, { status: "accepted" });
+                            const updated = await axios.get(`https://farmconnect-ten-green.vercel.app/api/crops/${id}`);
                             setCrop(updated.data);
                           }}
                           className="bg-green-600 text-white px-2 py-1 rounded hover:bg-green-700">Accept</button>
                           <button onClick={async () => {
-                            await axios.patch(`http://localhost:3000/api/crops/${id}/interests/${i._id}`, { status: "rejected" });
-                            const updated = await axios.get(`http://localhost:3000/api/crops/${id}`);
+                            await axios.patch(`https://farmconnect-ten-green.vercel.app/api/crops/${id}/interests/${i._id}`, { status: "rejected" });
+                            const updated = await axios.get(`https://farmconnect-ten-green.vercel.app/api/crops/${id}`);
                             setCrop(updated.data);
                           }}
                           className="bg-red-600 text-white px-2 py-1 rounded hover:bg-red-700">Reject</button>

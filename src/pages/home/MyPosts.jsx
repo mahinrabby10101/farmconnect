@@ -10,7 +10,7 @@ export default function MyPosts() {
   useEffect(() => {
     if (user?.email) {
       axios
-        .get(`http://localhost:3000/api/my-crops?email=${user.email}`)
+        .get(`https://farmconnect-ten-green.vercel.app/api/my-crops?email=${user.email}`)
         .then(res => setCrops(res.data));
     }
   }, [user]);
@@ -19,7 +19,7 @@ export default function MyPosts() {
   const handleDelete = async (id) => {
     if (!confirm("Are you sure you want to delete this crop?")) return;
 
-    await axios.delete(`http://localhost:3000/api/crops/${id}`);
+    await axios.delete(`https://farmconnect-ten-green.vercel.app/api/crops/${id}`);
     setCrops(crops.filter(crop => crop._id !== id));
   };
 

@@ -40,7 +40,7 @@ export default function AddCrop() {
         },
       };
 
-      await axios.post("http://localhost:3000/api/crops", payload);
+      await axios.post("https://farmconnect-ten-green.vercel.app/api/crops", payload);
 
       alert("Crop added successfully!");
       navigate("/my-posts"); // Redirect to My Posts page

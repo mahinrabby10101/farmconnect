@@ -8,7 +8,7 @@ export default function HomeCrops() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/crops?limit=6")
+      .get("https://farmconnect-ten-green.vercel.app/api/crops?limit=6")
       .then(res => setCrops(res.data))
       .catch(err => console.error(err));
   }, []);

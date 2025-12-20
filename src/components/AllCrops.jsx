@@ -17,7 +17,7 @@ export default function AllCrops() {
   const typeFilter = params.get("type"); // Vegetable, Fruit, Grain
 
   useEffect(() => {
-    const url = `http://localhost:3000/api/crops${typeFilter ? `?type=${typeFilter}` : ""}`;
+    const url = `https://farmconnect-ten-green.vercel.app/api/crops${typeFilter ? `?type=${typeFilter}` : ""}`;
     axios.get(url)
       .then(res => {
         setCrops(res.data);

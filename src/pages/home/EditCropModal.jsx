@@ -12,7 +12,7 @@ export default function EditCropModal({ crop, setSelectedCrop, crops, setCrops }
     };
 
     const res = await axios.patch(
-      `http://localhost:3000/api/crops/${crop._id}`,
+      `https://farmconnect-ten-green.vercel.app/api/crops/${crop._id}`,
       updatedCrop
     );
 

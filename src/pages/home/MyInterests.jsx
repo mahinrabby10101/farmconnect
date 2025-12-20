@@ -8,7 +8,7 @@ export default function MyInterests() {
 
   useEffect(() => {
     if (user?.email) {
-      axios.get(`http://localhost:3000/api/my-interests?email=${user.email}`)
+      axios.get(`https://farmconnect-ten-green.vercel.app/api/my-interests?email=${user.email}`)
         .then(res => setInterests(res.data))
         .catch(err => console.error(err));
     }
