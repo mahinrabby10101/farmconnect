@@ -10,7 +10,7 @@
 **KrishiLink** is a modern agro-social networking web application that connects **farmers, traders, and consumers** in one digital platform.  
 Instead of a traditional buyer-seller e-commerce model, KrishiLink focuses on **direct interaction, collaboration, and interest-based connections** among users in the agricultural sector.
 
-Users can post crops they are growing or selling, browse other users’ posts, and send interest requests to connect and collaborate.
+Users can post crops theey are growing or selling, browse other users’ posts, and send interest requests to connect and collaborate.
 
 ---
 
