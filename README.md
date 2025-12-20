@@ -17,7 +17,7 @@ Users can post crops they are growing or selling, browse other users’ posts, a
 ## 🚀 Key Features
 
 - 🌱 Users can post crops they are growing or selling
-- 🔍 Browse and search all crop posts with live filtering
+- 🔍 Browse and search al crop posts with live filtering
 - 🤝 Send interest requests and collaborate directly
 - 🔐 Secure authentication (Email/Password & Google Login)
 - 📊 Manage own posts and track sent interests
